@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас — Сервис по ремонту техники в Омске | Главный Мастер</title>
+    <meta name="description" content="Сервис Главный Мастер в Омске: профессиональный ремонт холодильников и стиральных машин. Опытные мастера, гарантия до 2 лет, выезд за 60 минут.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F8F9FA; color: #2D3E50; line-height: 1.5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #1E3A5F; color: white; position: sticky; top: 0; z-index: 100; }
+        .header .container { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; flex-wrap: wrap; gap: 15px; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { width: 48px; height: 48px; background: linear-gradient(135deg, #F4A261, #E76F51); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; color: #1E3A5F; }
+        .logo-text h1 { font-size: 1.4rem; }
+        .header-contacts { text-align: right; }
+        .header-contacts a { color: #F4A261; text-decoration: none; font-size: 1.2rem; font-weight: 600; display: block; }
+        .btn-call { background: #F4A261; color: #1E3A5F; padding: 10px 24px; border-radius: 40px; font-weight: 600; margin-top: 8px; display: inline-block; cursor: pointer; border: none; }
+        .btn-primary { background: #F4A261; color: #1E3A5F; padding: 12px 28px; border-radius: 40px; font-weight: 600; cursor: pointer; border: none; display: inline-block; text-decoration: none; }
+        .btn-primary:hover, .btn-call:hover { background: #E76F51; }
+        .page-title { text-align: center; padding: 50px 0 30px; background: white; }
+        .page-title h1 { font-size: 2.5rem; color: #1E3A5F; margin-bottom: 15px; }
+        .about-section { padding: 40px 0; background: #F8F9FA; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .about-text { background: white; border-radius: 20px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .about-text h2 { color: #1E3A5F; margin-bottom: 20px; font-size: 1.6rem; }
+        .about-text p { margin-bottom: 15px; line-height: 1.6; }
+        .about-text ul { margin: 20px 0 20px 20px; }
+        .about-text li { margin-bottom: 10px; }
+        .masters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+        .master-card { background: white; border-radius: 20px; padding: 25px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .master-card:hover { transform: translateY(-5px); }
+        .master-avatar { width: 100px; height: 100px; background: linear-gradient(135deg, #1E3A5F, #F4A261); border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 40px; color: white; }
+        .master-card h3 { color: #1E3A5F; margin-bottom: 8px; }
+        .master-card p { color: #666; font-size: 0.9rem; }
+        .stats { background: #1E3A5F; color: white; padding: 50px 0; margin: 40px 0; border-radius: 20px; text-align: center; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+        .stat-number { font-size: 2.5rem; font-weight: bold; color: #F4A261; }
+        .form-section { padding: 60px 0; background: #1E3A5F; color: white; text-align: center; }
+        .form-box { max-width: 500px; margin: 30px auto 0; background: white; padding: 30px; border-radius: 20px; }
+        .form-group input { width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 40px; margin-bottom: 15px; }
+        .footer { background: #1E3A5F; color: white; padding: 40px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer a { color: #F4A261; text-decoration: none; }
+        .copyright { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+        @media (max-width: 768px) { 
+            .header .container { flex-direction: column; text-align: center; } 
+            .about-grid { grid-template-columns: 1fr; } 
+            .page-title h1 { font-size: 1.8rem; } 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">ГМ</div>
+                <div class="logo-text"><h1>Главный Мастер</h1><p>Ремонт в Омске</p></div>
+            </div>
+            <div class="header-contacts">
+                <a href="tel:89334408969">📞 8 (933) 440-89-69</a>
+                <a href="tel:89136408969">📞 8 (913) 640-89-69</a>
+                <button class="btn-call" onclick="document.getElementById('form-section').scrollIntoView({behavior:'smooth'})">Вызвать мастера</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <div class="container">
+            <h1>О нас</h1>
+            <p>Профессиональный ремонт бытовой техники в Омске</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Кто мы</h2>
+                    <p><strong>Главный Мастер</strong> — это команда профессиональных мастеров по ремонту холодильников и стиральных машин в Омске. Мы работаем с 2015 года и за это время отремонтировали более 5000 единиц техники.</p>
+                    <p>Наша цель — качественный и быстрый ремонт по доступным ценам. Мы ценим ваше время, поэтому приезжаем в течение 60 минут после звонка.</p>
+                    
+                    <h2 style="margin-top: 30px;">Наши преимущества</h2>
+                    <ul>
+                        <li>✅ Выезд мастера за 60 минут</li>
+                        <li>✅ Диагностика бесплатно при ремонте</li>
+                        <li>✅ Гарантия до 2 лет на все виды работ</li>
+                        <li>✅ Работаем со всеми брендами техники</li>
+                        <li>✅ Фиксированные цены без скрытых платежей</li>
+                        <li>✅ Оригинальные запчасти</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h2>Наша миссия</h2>
+                    <p>Вернуть вашей технике вторую жизнь быстро, качественно и с гарантией. Мы понимаем, как важно иметь работающий холодильник или стиральную машину, поэтому делаем всё возможное, чтобы ремонт занимал минимум времени.</p>
+                    
+                    <h2 style="margin-top: 30px;">Гарантии</h2>
+                    <p>Все наши работы и установленные запчасти имеют официальную гарантию. Если после ремонта возникнут проблемы — устраним их бесплатно.</p>
+                    <p style="margin-top: 15px;"><strong>Работаем с 9:00 до 21:00 ежедневно</strong><br>Выезжаем по всему Омску и ближайшему пригороду.</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div><div class="stat-number">10+</div><div>лет опыта</div></div>
+                        <div><div class="stat-number">5000+</div><div>отремонтировано</div></div>
+                        <div><div class="stat-number">98%</div><div>довольных клиентов</div></div>
+                        <div><div class="stat-number">60 мин</div><div>среднее время приезда</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="text-align: center; color: #1E3A5F; margin: 40px 0 20px;">Наши мастера</h2>
+            <div class="masters-grid">
+                <div class="master-card">
+                    <div class="master-avatar">А</div>
+                    <h3>Александр</h3>
+                    <p>Главный мастер</p>
+                    <p>Стаж 12 лет</p>
+                    <p>Специализация: холодильники всех брендов</p>
+                </div>
+                <div class="master-card">
+                    <div class="master-avatar">Д</div>
+                    <h3>Дмитрий</h3>
+                    <p>Ведущий мастер</p>
+                    <p>Стаж 8 лет</p>
+                    <p>Специализация: стиральные машины</p>
+                </div>
+                <div class="master-card">
+                    <div class="master-avatar">М</div>
+                    <h3>Михаил</h3>
+                    <p>Мастер-диагност</p>
+                    <p>Стаж 6 лет</p>
+                    <p>Специализация: сложная диагностика</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="form-section">
+        <div class="container">
+            <h2>Оставьте заявку — перезвоним через 5 минут</h2>
+            <div class="form-box">
+                <form action="https://formsubmit.co/sta3679@yandex.ru" method="POST">
+                    <input type="hidden" name="_subject" value="Заявка с сайта - о нас">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                    <div class="form-group"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                    <button type="submit" class="btn-primary">Вызвать мастера</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3>Главный Мастер</h3><p>Ремонт холодильников и стиральных машин в Омске</p></div>
+                <div><h3>Меню</h3><p><a href="index.html">Главная</a></p><p><a href="remont-holodilnikov.html">Ремонт холодильников</a></p><p><a href="remont-stiralnyh-mashin.html">Ремонт стиральных машин</a></p><p><a href="prices.html">Цены</a></p><p><a href="reviews.html">Отзывы</a></p><p><a href="contacts.html">Контакты</a></p></div>
+                <div><h3>Контакты</h3><a href="tel:89334408969">📞 8 (933) 440-89-69</a><br><a href="tel:89136408969">📞 8 (913) 640-89-69</a><br><a href="mailto:sta3679@yandex.ru">✉ sta3679@yandex.ru</a><p>📍 Омск, пр. Мира, 84</p><p>🕐 Ежедневно 9:00–21:00</p></div>
+            </div>
+            <div class="copyright"><p>© 2025 Главный Мастер. Все права защищены.</p></div>
+        </div>
+    </footer>
+</body>
+</html>
