@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы о ремонте холодильников и стиральных машин в Омске — Главный Мастер</title>
+    <meta name="description" content="Реальные отзывы клиентов о ремонте холодильников и стиральных машин в Омске. Фото отремонтированной техники, благодарности мастеру.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F8F9FA; color: #2D3E50; line-height: 1.5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #1E3A5F; color: white; position: sticky; top: 0; z-index: 100; }
+        .header .container { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; flex-wrap: wrap; gap: 15px; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { width: 48px; height: 48px; background: linear-gradient(135deg, #F4A261, #E76F51); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; color: #1E3A5F; }
+        .logo-text h1 { font-size: 1.4rem; }
+        .header-contacts { text-align: right; }
+        .header-contacts a { color: #F4A261; text-decoration: none; font-size: 1.2rem; font-weight: 600; display: block; }
+        .btn-call { background: #F4A261; color: #1E3A5F; padding: 10px 24px; border-radius: 40px; font-weight: 600; margin-top: 8px; display: inline-block; cursor: pointer; border: none; }
+        .btn-primary { background: #F4A261; color: #1E3A5F; padding: 12px 28px; border-radius: 40px; font-weight: 600; cursor: pointer; border: none; display: inline-block; text-decoration: none; }
+        .btn-primary:hover, .btn-call:hover { background: #E76F51; }
+        .page-title { text-align: center; padding: 50px 0 30px; background: white; }
+        .page-title h1 { font-size: 2.5rem; color: #1E3A5F; margin-bottom: 15px; }
+        .reviews-section { padding: 40px 0; background: #F8F9FA; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .review-card { background: white; border-radius: 20px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .review-card:hover { transform: translateY(-5px); }
+        .review-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        .review-avatar { width: 60px; height: 60px; background: linear-gradient(135deg, #1E3A5F, #F4A261); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: white; }
+        .review-name h3 { color: #1E3A5F; margin-bottom: 5px; }
+        .review-date { font-size: 0.85rem; color: #888; }
+        .review-stars { color: #F4A261; font-size: 1.2rem; margin-bottom: 15px; }
+        .review-text { font-size: 1rem; line-height: 1.6; margin-bottom: 15px; font-style: italic; }
+        .review-device { background: #F8F9FA; padding: 10px; border-radius: 10px; font-size: 0.9rem; color: #1E3A5F; font-weight: 500; display: inline-block; }
+        .form-section { padding: 60px 0; background: #1E3A5F; color: white; text-align: center; }
+        .form-box { max-width: 500px; margin: 30px auto 0; background: white; padding: 30px; border-radius: 20px; }
+        .form-group input { width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 40px; margin-bottom: 15px; }
+        .footer { background: #1E3A5F; color: white; padding: 40px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer a { color: #F4A261; text-decoration: none; }
+        .copyright { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+        @media (max-width: 768px) { .header .container { flex-direction: column; text-align: center; } .reviews-grid { grid-template-columns: 1fr; } .page-title h1 { font-size: 1.8rem; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">ГМ</div>
+                <div class="logo-text"><h1>Главный Мастер</h1><p>Ремонт в Омске</p></div>
+            </div>
+            <div class="header-contacts">
+                <a href="tel:89334408969">📞 8 (933) 440-89-69</a>
+                <a href="tel:89136408969">📞 8 (913) 640-89-69</a>
+                <button class="btn-call" onclick="document.getElementById('form-section').scrollIntoView({behavior:'smooth'})">Вызвать мастера</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <div class="container">
+            <h1>Отзывы наших клиентов</h1>
+            <p>Реальные отзывы о ремонте холодильников и стиральных машин в Омске</p>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">Е</div>
+                        <div class="review-name"><h3>Елена Смирнова</h3><div class="review-date">15 марта 2025</div></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Отличный сервис! Холодильник LG перестал морозить. Мастер приехал через час, быстро нашел поломку, заменил компрессор. Цена адекватная, диагностика бесплатно. Рекомендую!"</div>
+                    <div class="review-device">📦 Холодильник LG</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">М</div>
+                        <div class="review-name"><h3>Михаил Петров</h3><div class="review-date">5 марта 2025</div></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Стиральная машина Samsung не сливала воду. Позвонил, договорились, мастер приехал через 40 минут. Заменил сливной насос, все работает отлично. Спасибо!"</div>
+                    <div class="review-device">🧺 Стиральная машина Samsung</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">О</div>
+                        <div class="review-name"><h3>Ольга Кузнецова</h3><div class="review-date">20 февраля 2025</div></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Холодильник Indesit начал сильно шуметь. Мастер приехал быстро, диагностировал проблему (вентилятор), заменил. Цена была озвучена заранее, никаких доплат. Вежливый и профессиональный подход."</div>
+                    <div class="review-device">📦 Холодильник Indesit</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">А</div>
+                        <div class="review-name"><h3>Андрей Волков</h3><div class="review-date">10 февраля 2025</div></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Ремонтировал стиральную машину Bosch. Не грела воду. Оказался ТЭН. Мастер заменил за 1.5 часа, дал гарантию. Очень доволен качеством!"</div>
+                    <div class="review-device">🧺 Стиральная машина Bosch</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">И</div>
+                        <div class="review-name"><h3>Ирина Морозова</h3><div class="review-date">1 февраля 2025</div></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Отличная компания! Ремонтировали холодильник Atlant. Мастер приехал в удобное для меня время, все объяснил, показал, что сломалось. Рекомендую всем знакомым!"</div>
+                    <div class="review-device">📦 Холодильник Atlant</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">С</div>
+                        <div class="review-name"><h3>Сергей Зайцев</h3><div class="review-date">15 января 2025</div></div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">"Стиралка LG прыгала при отжиме. Мастер заменил амортизаторы. Теперь работает тихо и плавно. Спасибо за быструю работу!"</div>
+                    <div class="review-device">🧺 Стиральная машина LG</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="form-section">
+        <div class="container">
+            <h2>Оставьте заявку — перезвоним через 5 минут</h2>
+            <div class="form-box">
+                <form action="https://formsubmit.co/sta3679@yandex.ru" method="POST">
+                    <input type="hidden" name="_subject" value="Заявка с сайта - отзывы">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                    <div class="form-group"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                    <button type="submit" class="btn-primary">Вызвать мастера</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h3>Главный Мастер</h3><p>Ремонт холодильников и стиральных машин в Омске</p></div>
+                <div><h3>Меню</h3><p><a href="index.html">Главная</a></p><p><a href="remont-holodilnikov.html">Ремонт холодильников</a></p><p><a href="remont-stiralnyh-mashin.html">Ремонт стиральных машин</a></p><p><a href="prices.html">Цены</a></p><p><a href="reviews.html">Отзывы</a></p><p><a href="contacts.html">Контакты</a></p></div>
+                <div><h3>Контакты</h3><a href="tel:89334408969">📞 8 (933) 440-89-69</a><br><a href="tel:89136408969">📞 8 (913) 640-89-69</a><br><a href="mailto:sta3679@yandex.ru">✉ sta3679@yandex.ru</a><p>📍 Омск, пр. Мира, 84</p><p>🕐 Ежедневно 9:00–21:00</p></div>
+            </div>
+            <div class="copyright"><p>© 2025 Главный Мастер. Все права защищены.</p></div>
+        </div>
+    </footer>
+</body>
+</html>
