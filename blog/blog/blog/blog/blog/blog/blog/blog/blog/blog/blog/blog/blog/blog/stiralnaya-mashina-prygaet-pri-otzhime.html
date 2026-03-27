@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стиральная машина прыгает при отжиме — причины и ремонт | Главный Мастер</title>
+    <meta name="description" content="Почему стиральная машина прыгает и сильно вибрирует при отжиме? Причины: дисбаланс, износ амортизаторов, ослабление противовеса. Что делать?" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #F8F9FA; color: #2D3E50; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #1E3A5F; color: white; position: sticky; top: 0; z-index: 100; }
+        .header .container { max-width: 1200px; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; flex-wrap: wrap; gap: 15px; margin: 0 auto; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { width: 48px; height: 48px; background: linear-gradient(135deg, #F4A261, #E76F51); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; color: #1E3A5F; }
+        .logo-text h1 { font-size: 1.4rem; }
+        .header-contacts { text-align: right; }
+        .header-contacts a { color: #F4A261; text-decoration: none; font-size: 1.2rem; font-weight: 600; display: block; }
+        .btn-call { background: #F4A261; color: #1E3A5F; padding: 10px 24px; border-radius: 40px; font-weight: 600; margin-top: 8px; display: inline-block; cursor: pointer; border: none; }
+        .btn-primary { background: #F4A261; color: #1E3A5F; padding: 12px 28px; border-radius: 40px; font-weight: 600; cursor: pointer; border: none; display: inline-block; text-decoration: none; }
+        .btn-primary:hover, .btn-call:hover { background: #E76F51; }
+        .breadcrumbs { margin: 20px 0; color: #888; font-size: 0.9rem; }
+        .breadcrumbs a { color: #F4A261; text-decoration: none; }
+        .article { background: white; border-radius: 20px; padding: 40px; margin: 20px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .article h1 { font-size: 2rem; color: #1E3A5F; margin-bottom: 15px; }
+        .article-meta { color: #888; font-size: 0.9rem; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .article h2 { font-size: 1.5rem; color: #1E3A5F; margin: 25px 0 15px; }
+        .article h3 { font-size: 1.2rem; color: #1E3A5F; margin: 20px 0 10px; }
+        .article p { margin-bottom: 15px; }
+        .article ul, .article ol { margin: 15px 0 15px 25px; }
+        .article li { margin-bottom: 8px; }
+        .article .note { background: #F8F9FA; padding: 20px; border-left: 4px solid #F4A261; margin: 20px 0; border-radius: 8px; }
+        .form-section { padding: 60px 0; background: #1E3A5F; color: white; text-align: center; }
+        .form-box { max-width: 500px; margin: 30px auto 0; background: white; padding: 30px; border-radius: 20px; }
+        .form-group input { width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 40px; margin-bottom: 15px; }
+        .footer { background: #1E3A5F; color: white; padding: 40px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px; max-width: 1200px; margin: 0 auto 30px; padding: 0 20px; }
+        .footer a { color: #F4A261; text-decoration: none; }
+        .copyright { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); max-width: 1200px; margin: 0 auto; }
+        @media (max-width: 768px) { .header .container { flex-direction: column; text-align: center; } .article { padding: 25px; } .article h1 { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container" style="max-width:1200px">
+            <div class="logo">
+                <div class="logo-icon">ГМ</div>
+                <div class="logo-text"><h1>Главный Мастер</h1><p>Ремонт в Омске</p></div>
+            </div>
+            <div class="header-contacts">
+                <a href="tel:89334408969">📞 8 (933) 440-89-69</a>
+                <a href="tel:89136408969">📞 8 (913) 640-89-69</a>
+                <button class="btn-call" onclick="document.getElementById('form-section').scrollIntoView({behavior:'smooth'})">Вызвать мастера</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="../index.html">Главная</a> / <a href="../blog.html">Блог</a> / Стиральная машина прыгает при отжиме
+        </div>
+
+        <article class="article">
+            <h1>Стиральная машина прыгает при отжиме — причины и ремонт</h1>
+            <div class="article-meta">📅 10 января 2025 | 👁 2 321 просмотр | 🧺 Ремонт стиральных машин</div>
+            
+            <p>Знакомая ситуация: при отжиме стиральная машина начинает прыгать, вибрировать и даже перемещаться по полу. Это не только неприятно, но и опасно для самой машины. Давайте разберемся, почему это происходит и как исправить.</p>
+            
+            <h2>Почему стиральная машина прыгает?</h2>
+            
+            <h3>1. Не сняты транспортировочные болты</h3>
+            <p>Самая частая причина после покупки или перевозки. Болты фиксируют барабан, и если их не снять, машина будет прыгать при отжиме. Проверьте заднюю стенку — если болты на месте, их нужно выкрутить.</p>
+            
+            <h3>2. Неправильная установка</h3>
+            <p>Машина стоит неровно. Используйте уровень, чтобы отрегулировать ножки. После регулировки затяните контргайки.</p>
+            
+            <h3>3. Износ амортизаторов</h3>
+            <p>Амортизаторы гасят вибрацию барабана. Со временем они изнашиваются и перестают выполнять свою функцию. Признаки: машина сильно вибрирует, слышны удары.</p>
+            
+            <h3>4. Ослабление или поломка противовеса</h3>
+            <p>Противовес — тяжелый бетонный блок, который удерживает машину на месте. Если он ослаб или треснул, вибрация усиливается.</p>
+            
+            <h3>5. Дисбаланс белья</h3>
+            <p>Если белье сбилось в комок, машина может начать прыгать. В этом случае программа отжима может прерваться, но если нет — остановите цикл и распределите белье руками.</p>
+            
+            <h3>6. Износ подшипников</h3>
+            <p>Изношенные подшипники вызывают люфт барабана, что приводит к вибрации и шуму. Признаки: гул, скрежет при отжиме, люфт барабана.</p>
+            
+            <div class="note">
+                <strong>⚠️ Важно!</strong> Игнорирование проблемы может привести к поломке амортизаторов, противовеса и даже к разрыву бака. Своевременный ремонт обойдется дешевле.
+            </div>
+            
+            <h2>Что можно сделать самостоятельно?</h2>
+            
+            <ol>
+                <li><strong>Проверьте транспортировочные болты</strong> — если они не сняты, выкрутите их.</li>
+                <li><strong>Выровняйте машину по уровню</strong> — отрегулируйте ножки.</li>
+                <li><strong>Проверьте загрузку белья</strong> — распределите белье равномерно.</li>
+                <li><strong>Убедитесь, что машина не касается стен или мебели</strong> — оставьте зазор 2-3 см.</li>
+            </ol>
+            
+            <p>Если проблема не решена, потребуется вызов мастера для диагностики амортизаторов, противовеса или подшипников.</p>
+            
+            <h2>Сколько стоит ремонт?</h2>
+            <p>Стоимость зависит от причины поломки:</p>
+            <ul>
+                <li>Диагностика — <strong>0 ₽</strong> (бесплатно при ремонте)</li>
+                <li>Регулировка ножек — от 500 ₽</li>
+                <li>Замена амортизаторов — от 2 500 ₽</li>
+                <li>Замена противовеса — от 2 000 ₽</li>
+                <li>Замена подшипников — от 4 500 ₽</li>
+            </ul>
+            
+            <p>Выезд мастера в Омске — за 60 минут. Диагностика бесплатно, если вы соглашаетесь на ремонт. Все работы с гарантией до 2 лет.</p>
+            
+            <div class="note">
+                <strong>🔧 Нужна помощь?</strong> Оставьте заявку ниже — наш мастер приедет, проведет диагностику и быстро устранит неисправность.
+            </div>
+        </article>
+    </div>
+
+    <section class="form-section" id="form-section">
+        <div class="container">
+            <h2>Оставьте заявку — перезвоним через 5 минут</h2>
+            <div class="form-box">
+                <form action="https://formsubmit.co/sta3679@yandex.ru" method="POST">
+                    <input type="hidden" name="_subject" value="Заявка с сайта - статья: стиралка прыгает при отжиме">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group"><input type="text" name="name" placeholder="Ваше имя" required></div>
+                    <div class="form-group"><input type="tel" name="phone" placeholder="Ваш телефон" required></div>
+                    <button type="submit" class="btn-primary">Вызвать мастера</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div><h3>Главный Мастер</h3><p>Ремонт холодильников и стиральных машин в Омске</p></div>
+            <div><h3>Меню</h3><p><a href="../index.html">Главная</a></p><p><a href="../remont-holodilnikov.html">Ремонт холодильников</a></p><p><a href="../remont-stiralnyh-mashin.html">Ремонт стиральных машин</a></p><p><a href="../prices.html">Цены</a></p><p><a href="../reviews.html">Отзывы</a></p><p><a href="../contacts.html">Контакты</a></p></div>
+            <div><h3>Контакты</h3><a href="tel:89334408969">📞 8 (933) 440-89-69</a><br><a href="tel:89136408969">📞 8 (913) 640-89-69</a><br><a href="mailto:sta3679@yandex.ru">✉ sta3679@yandex.ru</a><p>📍 Омск, пр. Мира, 84</p><p>🕐 Ежедневно 9:00–21:00</p></div>
+        </div>
+        <div class="copyright"><p>© 2025 Главный Мастер. Все права защищены.</p></div>
+    </footer>
+</body>
+</html>
